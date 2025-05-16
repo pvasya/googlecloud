@@ -9,8 +9,7 @@ const model = await Moondream1ForConditionalGeneration.from_pretrained(model_id,
         embed_tokens: 'fp16', // or 'fp32'
         vision_encoder: 'fp16', // or 'q8'
         decoder_model_merged: 'q4', // or 'q4f16' or 'q8'
-    },
-    device: 'cuda',
+    }
 });
 
 // Prepare text inputs
